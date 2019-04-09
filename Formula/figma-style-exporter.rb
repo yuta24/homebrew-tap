@@ -4,7 +4,7 @@
 class FigmaStyleExporter < Formula
   desc "Figma's style exporter"
   homepage "https://github.com/yuta24/figma-style-exporter"
-  url "https://github.com/yuta24/figma-style-exporter/archive/0.0.1.tar.gz"
+  url "https://github.com/yuta24/figma-style-exporter/archive/0.0.2.tar.gz"
   sha256 "648cb49300be5324a2d6195886edb0bfd1ea20813a7e1fd0654ff3c8f6e2e89d"
 
   depends_on "rust" => :build
