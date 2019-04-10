@@ -15,7 +15,7 @@ class FigmaStyleExporter < Formula
   end
 
   test do
-    system 'echo', 'pending' # "#{bin}/figma-style-exporter", '-v'
+    system 'echo', 'pending' # "#{bin}/figma-style-exporter", '-h'
   end
 end
 
