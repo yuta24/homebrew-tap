@@ -7,6 +7,7 @@ class FigmaStyleExporter < Formula
   desc "Figma's style exporter"
   homepage "https://github.com/yuta24/figma-style-exporter"
   url "https://github.com/yuta24/figma-style-exporter/releases/download/#{VERSION}/figma-style-exporter_x86_64-apple-darwin.zip"
+  version VERSION
   sha256 "17345cbe6413249cbf658edef0bd643103fd6101671081fe364bb42d25a3aa8b"
 
   def install
