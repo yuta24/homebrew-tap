@@ -2,15 +2,19 @@
 #                https://www.rubydoc.info/github/Homebrew/brew/master/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class FigmaStyleExporter < Formula
+  VERSION = '0.0.5'.freeze
+
   desc "Figma's style exporter"
   homepage "https://github.com/yuta24/figma-style-exporter"
-  url "https://github.com/yuta24/figma-style-exporter/archive/0.0.4.tar.gz"
-  sha256 "93a5e1f31ed6f1d7ddaa58cd9622e264926ca1ef0ee10bb0b482908f804c1ecf"
-
-  depends_on "rust" => :build
+  url "https://github.com/yuta24/figma-style-exporter/releases/download/#{VERSION}/figma-style-exporter_x86_64-apple-darwin.zip"
+  sha256 "17345cbe6413249cbf658edef0bd643103fd6101671081fe364bb42d25a3aa8b"
 
   def install
-    system "cargo", "install", "--root", prefix, "--path", "."
+    bin.install 'figma-style-exporter'
+  end
+
+  test do
+    system 'echo', 'pending' # "#{bin}/figma-style-exporter", '-v'
   end
 end
 
